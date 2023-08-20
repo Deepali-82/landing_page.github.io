@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Responsive Landing Pages</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">Logo</div>
+            <a href="#" class="toggle-btw">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-section">
+
+            <h1>Development Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
+                feugiat euismod velit eu malesuada. In in molestie quam. Pellentesque quam elit, 
+                fringilla volutpat ultrices quis, tincidunt fringilla lacus. Suspendisse porttitor 
+                euismod ante. Sed sit amet augue felis. Nulla in libero semper,
+                 sodales orci in, blandit tortor. Etiam ut faucibus diam, sit amet 
+                 tincidunt eros.</p>
+                 <div class="button"><a href="#">Join Now</a></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const togglebtw=document.getElementsByClassName("toggle-btw")[0];
+        const navmenu=document.getElementsByClassName("nav-menu")[0]
+        togglebtw.addEventListener("click",()=>{
+            navmenu.classList.toggle("active")
+        })
+    </script>
+
+</body>
+</html>
